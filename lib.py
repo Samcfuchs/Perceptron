@@ -45,7 +45,7 @@ class Perceptron(object):
         assert len(X) == len(y)
 
         n = 0
-        for i in range(X):
+        for i in range(len(X)):
             n += self.classify_value(X[i]) == y[i]
 
         return n / len(X)
